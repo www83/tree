@@ -1,0 +1,322 @@
+body {
+  font-family: 'Lato', sans-serif;
+  /* overflow-x: hidden; */
+  /* background: url(../images/background.png)no-repeat; */
+    /* background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover; */
+   
+  /* background-color: rgb(198, 240, 233); */
+  /* background-image: linear-gradient(to right, #d6e4ea,rgb(7, 76, 65)); */
+}
+.contactsMain3{
+  margin-top: -1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+
+#box {
+  height: 50px;
+  margin-top: 5%;
+}
+h2 {
+  margin-left: 30%;
+  margin-top: 10%;
+}
+
+ footer {
+  position: absolute;
+  margin-left: 36%;
+  color: white;
+  text-shadow:  2px 1px 2px rgb(102, 85, 40);
+}
+footer a {
+  color: white;
+}
+
+
+  @keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .boxes { 
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+  }
+  .boxes2 { 
+    animation: 2s ease-out 0s 1 slideInFromLeft;
+   
+  }
+  .boxes3 { 
+    animation: 3s ease-out 0s 1 slideInFromLeft;
+  }
+
+  .boxes4 { 
+    animation: 4s ease-out 0s 1 slideInFromLeft;
+  }
+
+  .boxes5 { 
+    animation: 5s ease-out 0s 1 slideInFromLeft;
+  }
+
+  .boxes10 { 
+    animation: 6s ease-out 0s 1 slideInFromLeft;
+  }
+
+  .boxes11 { 
+    animation: 7s ease-out 0s 1 slideInFromLeft;
+  }
+
+  .boxes12 { 
+    animation: 8s ease-out 0s 1 slideInFromLeft;
+  }
+  
+  .boxes, .boxes2, .boxes3, .boxes4, .boxes5, .boxes10, .boxes11, .boxes12 {
+    margin-top: 30px;
+    height: 40px;
+  }
+  
+
+h3, h4, h5 {
+  color: white; 
+}
+
+  .playNav {
+    transition: all 0.5s;
+    margin-bottom: 20px;
+    background-image: -webkit-linear-gradient(#e4edb3, #0f8fea);
+      display: flex;
+      justify-content: space-between;
+      border-radius: 5px;
+      height: 100px;    
+  }
+  .playBtn {
+      border: none;
+      cursor: pointer;
+      appearance: none;
+      background-color: inherit;
+      background-image: -webkit-linear-gradient(#e4edb3, #0f8fea);
+      border-radius: 10%;
+      text-align: center;
+      margin: 1px auto;
+      padding: 20px; 
+      bottom: 0px;
+    }
+  
+  .playBtn:hover {
+      transform: scale(1.2);
+      background-image: -webkit-linear-gradient(#deeca3, #137dc8);
+    box-shadow: 0 12px 24px rgba(97, 96, 96, 0.844);
+  }
+
+  img {
+    z-index: 0;
+    height: 50px;
+  }
+  .playBtn a {
+    opacity: 0;
+  }
+   a {
+    text-decoration: none;
+    color: black;
+    /* z-index: 1; */
+    padding: 3em;
+  margin: -2em;
+   }
+
+   /* !!! */
+   .playBtn:hover a {
+    opacity: 1;
+    position: absolute;
+    z-index: 1;
+    margin-top: -5px;
+    color: rgb(221, 217, 217);
+   }
+.playBtn:hover img {
+  cursor: none;
+  z-index: 0;
+  transform: perspective(900px) translateY(-35%) rotateX(60deg) translateZ(0);
+  width: 85px;
+  height: 85px;
+  box-shadow: 2px 35px 32px -8px rgba(1, 1, 0, 0.75);
+  -webkit-box-shadow: 2px 35px 32px -8px rgba(1, 1, 0, 0.75);
+  -moz-box-shadow: 2px 35px 32px -8px rgba(1, 1, 0, 0.75);
+  border-radius: 5px;
+}
+
+.first, .second {
+  margin-top: 5%;
+  width: 400px;
+  height: 500px;
+  border-radius: 5px;
+  box-shadow: 2px 35px 32px -8px rgba(1, 1, 0, 0.75);
+  animation: fade-in 2s ease-in forwards;
+}
+
+.first {
+  margin-left: -5%; 
+}
+.second {
+  margin-left: 5%;
+}
+
+
+@media screen and (max-width: 500px) {
+  body {
+    height: 1000px;
+  }
+  .appear {
+    display: none;
+  }
+  .first, .second {
+    display: none;
+  }
+  .playBtn:focus a {
+    opacity: 1;
+    position: absolute;
+    z-index: 1;
+    margin-top: -5px;
+    color: rgb(221, 217, 217);
+   }
+.playBtn:focus img {
+  z-index: 0;
+  animation: animate 5s infinite linear;
+  width: 85px;
+  height: 85px;
+  box-shadow: 2px 35px 32px -8px rgba(1, 1, 0, 0.75);
+  -webkit-box-shadow: 2px 35px 32px -8px rgba(1, 1, 0, 0.75);
+  -moz-box-shadow: 2px 35px 32px -8px rgba(1, 1, 0, 0.75);
+  border-radius: 5px;
+  }
+  @keyframes animate {
+    to {
+      transform: perspective(900px) translateY(-35%) rotateX(60deg) translateZ(0);
+    }
+  
+}
+footer {
+  margin-top: 5%;
+  margin-left: -1%;
+}
+footer span {
+  text-decoration: underline;
+}
+.newImg2 {
+  display: none;
+}
+.newImg {
+  position: absolute;
+  height: 130%;
+  width: 100%;
+  z-index: -1;
+}
+.body2 {
+  background-image: -webkit-linear-gradient(rgb(20, 93, 69), #6fd1a0);
+}
+}
+@media screen and (min-width: 768px) {
+  .body2 {
+    background-image: -webkit-linear-gradient(rgb(20, 93, 69), #6fd1a0);
+    margin-bottom: 65%;
+  }
+  .playNav {
+    margin-left: 1.5%;
+  }
+  .newImg2 {
+    display: none;
+  }
+  .newImg {
+    display: block;
+    position: absolute;
+    height: 140%;
+    width: 118%;
+    z-index: -1;
+  }
+  .first, .second {
+    display: none;
+  }
+  .appear {
+    display: none;
+  }
+  .moving2 {
+    display: none;
+  }
+  footer {
+    margin-top: 5%;
+  }
+}
+@media screen and (width: 820px) {
+  .first, .second {
+    display: none;
+  }
+}
+@media screen and (width: 1024px) {
+  .first, .second {
+    display: none;
+  }
+}
+@media screen and (width: 912px) {
+  .first, .second {
+    display: none;
+  }
+}
+@media screen and (width: 540px) {
+  .first, .second {
+    display: none;
+  }
+  .appear {
+    display: none;
+  }
+
+  footer span {
+    text-decoration: underline;
+  }
+  .newImg2 {
+    display: none;
+  }
+  .newImg {
+    position: absolute;
+    height: 130%;
+    width: 100%;
+    z-index: -1;
+  }
+  .body2 {
+    background-image: -webkit-linear-gradient(rgb(20, 93, 69), #6fd1a0);
+    margin-bottom: 20%;
+  }
+ 
+}
+@media screen and (max-width: 359px) {
+.playBtn:nth-child(1) {
+  margin-top: -5%;
+  height: 60px;
+}
+}
+@media screen and (width: 853px) {
+  .first, .second {
+    /* ne raboti za asus z fold */
+    display: none;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .newImg2 {
+   display: block;
+   position: absolute;
+    height: 130%;
+    width: 115%;
+    z-index: -1;
+  }
+  .newImg {
+    display: none;
+  }
+  .appear {
+    display: block;
+  }
+}
