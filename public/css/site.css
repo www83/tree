@@ -37,6 +37,16 @@ footer a {
   color: white;
 }
 
+footer span {
+  text-decoration: underline;
+}
+.appearImg {
+  position: absolute;
+  height: 500px;
+  border-radius: 5px;
+  z-index: -1;
+}
+
 
   @keyframes slideInFromLeft {
     0% {
