@@ -8,7 +8,7 @@ body {
     -o-background-size: cover; */
    
   /* background-color: rgb(198, 240, 233); */
-  /* background-image: linear-gradient(to right, #d6e4ea,rgb(7, 76, 65)); */
+  background-image: linear-gradient(#0e5e4b, rgb(238, 244, 225));
 }
 .contactsMain3{
   margin-top: -1%;
@@ -36,18 +36,25 @@ h2 {
 footer a {
   color: white;
 }
-
 footer span {
   text-decoration: underline;
 }
 .appearImg {
+  display: block;
   position: absolute;
-  height: 500px;
+  height: 520px;
   width: 430px;
   border-radius: 5px;
   z-index: -1;
 }
 
+.bigImg, .bigImg2 {
+  display: none;
+  height: 500px;
+  width: 400px;
+  border-radius: 5px;
+}
+ 
 
   @keyframes slideInFromLeft {
     0% {
@@ -117,7 +124,8 @@ h3, h4, h5 {
       border-radius: 10%;
       text-align: center;
       margin: 1px auto;
-      padding: 20px; 
+      /* !!! zaradi padding-a na po tesni ednoto moje da izpadne */
+      /* padding: 20px;  */
       bottom: 0px;
     }
   
@@ -183,9 +191,9 @@ h3, h4, h5 {
   body {
     height: 1000px;
   }
-  .appear {
+  /* .appear {
     display: none;
-  }
+  } */
   .first, .second {
     display: none;
   }
@@ -228,17 +236,23 @@ footer span {
   width: 100%;
   z-index: -1;
 }
-.body2 {
+/* .body2 {
   background-image: -webkit-linear-gradient(rgb(20, 93, 69), #6fd1a0);
+} */
 }
-}
-@media screen and (min-width: 768px) {
-  .body2 {
-    background-image: -webkit-linear-gradient(rgb(20, 93, 69), #6fd1a0);
-    margin-bottom: 65%;
+@media screen and (min-width: 850px) {
+  body {
+    /* background-image: -webkit-linear-gradient(rgb(20, 93, 69), #6fd1a0); */
+    margin-bottom: 15%;
   }
   .playNav {
     margin-left: 1.5%;
+  }
+  .appearImg {
+    display: none;
+  }
+  .bigImg, .bigImg2 {
+    display: block;
   }
   .newImg2 {
     display: none;
@@ -253,9 +267,9 @@ footer span {
   .first, .second {
     display: none;
   }
-  .appear {
+  /* .appear {
     display: none;
-  }
+  } */
   .moving2 {
     display: none;
   }
@@ -263,57 +277,127 @@ footer span {
     margin-top: 5%;
   }
 }
+@media screen and (width: 768px) {
+  body {
+    margin-bottom: 50%;
+  }
+  .appearImg {
+    height: 700px;
+    width: 600px;
+  }
+  .textContent {
+    margin-left: 20%;
+  }
+  footer {
+    margin-left: 25%;
+  }
+}
 @media screen and (width: 820px) {
   .first, .second {
     display: none;
+  }
+  body {
+    margin-bottom: 20%;
+  }
+  .bigImg, .bigImg2 {
+    display: none;
+  }
+  .appearImg {
+    display: block;
+    height: 700px;
+    width: 600px;
+  }
+  .textContent {
+    margin-left: 20%;
+  }
+  footer {
+    margin-left: 25%;
   }
 }
 @media screen and (width: 1024px) {
   .first, .second {
     display: none;
   }
+  .bigImg, .bigImg2 {
+    display: none;
+  }
+  .appearImg {
+    display: block;
+    height: 700px;
+    width: 600px;
+  }
+  .textContent {
+    margin-left: 20%;
+  }
+  footer {
+    margin-left: 25%;
+  }
 }
 @media screen and (width: 912px) {
   .first, .second {
     display: none;
+  }
+  .bigImg, .bigImg2 {
+    display: none;
+  }
+  .appearImg {
+    display: block;
+    height: 700px;
+    width: 600px;
+  }
+  .textContent {
+    margin-left: 20%;
+  }
+  footer {
+    margin-left: 25%;
   }
 }
 @media screen and (width: 540px) {
   .first, .second {
     display: none;
   }
-  .appear {
+  .bigImg, .bigImg2 {
     display: none;
   }
-
-  footer span {
-    text-decoration: underline;
+  .appearImg {
+    display: block;
+    height: 650px;
+    width: 500px;
   }
-  .newImg2 {
-    display: none;
+  .textContent {
+    margin-left: 20%;
   }
-  .newImg {
-    position: absolute;
-    height: 130%;
-    width: 100%;
-    z-index: -1;
+  footer {
+    margin-left: 20%;
   }
-  .body2 {
-    background-image: -webkit-linear-gradient(rgb(20, 93, 69), #6fd1a0);
+  body {
     margin-bottom: 20%;
   }
  
 }
-@media screen and (max-width: 359px) {
-.playBtn:nth-child(1) {
-  margin-top: -5%;
-  height: 60px;
-}
-}
-@media screen and (width: 853px) {
+
+/* Asus!!! */
+@media screen and (height: 1280px){
   .first, .second {
     /* ne raboti za asus z fold */
     display: none;
+  }
+  body {
+    margin-bottom: 20%;
+  }
+  .bigImg, .bigImg2 {
+    display: none;
+  }
+  .appearImg {
+    display: block;
+    height: 800px;
+    width: 700px;
+  }
+  .textContent {
+    margin-left: 20%;
+  }
+  footer {
+    margin-left: 25%;
   }
 }
 @media screen and (min-width: 1300px) {
